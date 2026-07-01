@@ -1,0 +1,46 @@
+# CryptoSignal Bot — .gitignore
+# ⚠️ أمان: لا ترفع المفاتيح أو بيانات التداول أبداً
+
+# Environment — مفاتيح سرية
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Trading data — بيانات حساسة
+/root/.crypto-signal-bot/
+*.json.bak
+
+# Logs
+logs/*.json
+logs/*.log
+*.log
+
+# Archive — ملفات محذوفة
+_archive/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml

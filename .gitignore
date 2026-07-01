@@ -1,0 +1,60 @@
+# YJCryptoSignal — Root .gitignore
+# ⚠️ Security: Never commit secrets or trading data
+
+# === SECRETS ===
+Dev/.env
+*.env
+.env
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# === VIRTUAL ENVIRONMENT ===
+Dev/venv/
+Dev/.venv/
+venv/
+.venv/
+env/
+
+# === PYTEST CACHE ===
+.pytest_cache/
+Dev/.pytest_cache/
+.coverage
+htmlcov/
+
+# === LOGS ===
+Dev/logs/*.log
+Dev/logs/*.json
+*.log
+
+# === TRADING DATA (SENSITIVE) ===
+/root/.yjcryptosignal-bot/
+*.json.bak
+
+# === ARCHIVE ===
+Dev/_archive/
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === DOCKER ===
+docker-compose.override.yml
+wave2_*.md
+Dev/.env.bak.*
+Dev/docs/OPERATIONAL_RUNBOOKS.md
